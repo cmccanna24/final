@@ -1,0 +1,39 @@
+<%= form_tag albums_url, :method => "get" do %>
+
+  <%= text_field_tag :keyword %>
+  <%= submit_tag "Search" %>
+
+<% end %>
+
+<p><%= link_to "Add a New Album", "/albums/new" %></p>
+
+<p><%= @albums.count %> Albums.</p>
+
+<table class="table table-striped">
+  <tr>
+    <th></th>
+    <th>Title</th>
+    <th>Artist</th>
+    <th>Year</th>
+    <th>Rating</th>
+    <th></th>
+  </tr>
+  <% @albums.each do |album| %>
+    <tr>
+      <td><%= image_tag album.album_cover_url, :width => 128, :height => 128 %></td>
+      <td><%= link_to album.title, album_url(album.id) %></td>
+      <td><%= (Artist.find_by("id = #{album.artist_id}")).name %></td>
+      <td><%= album.year %></td>
+      <td>
+        <% album.rating.times do %>
+          &#9733;
+        <% end %>
+        <% (5 - album.rating).times do %>
+          &#9734;
+        <% end %>
+      </td>
+      
+    </tr>
+  <% end %>
+
+</table>

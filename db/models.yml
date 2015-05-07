@@ -1,0 +1,27 @@
+Artist
+  name: string
+
+Album
+  artist_id: integer
+  title: string
+  rating: integer
+  year: integer
+  album_cover_url: string
+
+Track
+  artist_id: integer
+  album_id: integer
+  name: string
+
+User
+  username: string
+  password: string
+  name: string
+
+Review
+  album_id: integer
+  user_id: integer
+  rating: integer
+  desc: string
+
+

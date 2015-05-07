@@ -1,0 +1,54 @@
+<table class="table table-striped">
+	<tr>
+		<th></th>
+		<th>Title</th>
+		<th>Artist</th>
+		<th>Year</th>
+		<th>Rating</th>
+		<th></th>
+	</tr>
+
+	<tr>
+		<td><%= image_tag @album.album_cover_url, :width => 128, :height => 128 %></td>
+		<td><%= link_to @album.title, album_url(@album.id) %></td>
+		<td><%= (Artist.find_by("id = #{@album.artist_id}")).name %></td>
+		<td><%= @album.year %></td>
+		<td>
+		<% @album.rating.times do %>
+		  &#9733;
+		<% end %>
+		<% (5 - @album.rating).times do %>
+		  &#9734;
+		<% end %>
+		</td>
+	</tr>
+</table>
+
+<p>
+Tracks
+<ol>
+<% tracks = Track.where("album_id = #{@album.id}") %>
+<% tracks.each do |track| %>
+	<li><%= track.name %></li>
+<% end %>
+</ol>
+</p>
+<% @reviews.each do |review| %>
+	<%
+	$i = 1
+	$num = 5
+	$stars = review.rating
+	while $i <= $num do
+		if $stars > 0 %>
+			&#9733 <%
+			$stars -= 1
+		else %>
+			&#9734 <%
+		end
+		$i += 1
+	end %>
+	<%= (User.find_by("id = #{review.user_id}")).username %>
+	<%= (User.find_by("id = #{review.user_id}")).name %> <br>
+	<%= review.desc %>
+	<br>
+<% end %>
