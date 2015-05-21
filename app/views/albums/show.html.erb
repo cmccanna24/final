@@ -4,14 +4,14 @@
 		<th>Title</th>
 		<th>Artist</th>
 		<th>Year</th>
-		<th>Rating</th>
+		<th>Rating (Number of Ratings)</th>
 		<th></th>
 	</tr>
 
 	<tr>
 		<td><%= image_tag @album.album_cover_url, :width => 128, :height => 128 %></td>
 		<td><%= link_to @album.title, album_url(@album.id) %></td>
-		<td><%= (Artist.find_by("id = #{@album.artist_id}")).name %></td>
+		<td><%= @album.artist.name %></td>
 		<td><%= @album.year %></td>
 		<td>
 		<% @album.rating.times do %>
@@ -19,13 +19,13 @@
 		<% end %>
 		<% (5 - @album.rating).times do %>
 		  &#9734;
-		<% end %>
+		<% end %>(<%= @album.rating_count %>)
 		</td>
 	</tr>
 </table>
 
 <p>
-Tracks
+<h3>Tracks</h3>
 <ol>
 <% tracks = Track.where("album_id = #{@album.id}") %>
 <% tracks.each do |track| %>
@@ -33,7 +33,36 @@ Tracks
 <% end %>
 </ol>
 </p>
+
+<p>
+<h4>Reviews</h4>
+
+<% if cookies["user_id"].present? %>
+	<h5>Write a Review</h5>
+	<%= form_tag "/reviews" do %>
+	  <select name="rating">
+	    <option>5 star</option>
+	    <option>4 star</option>
+	    <option>3 star</option>
+	    <option>2 star</option>
+	    <option>1 star</option>
+	  </select>
+	  <input name="desc" size="50">
+	  <input type="hidden" name="album_id" value="<%= @album.id %>">
+	  <button>Submit</button>
+	<% end %>
+<% end %>
+<br>
+
+<table>
 <% @reviews.each do |review| %>
+	<tr>
+	<td>
+	&#9651 <br>
+	<span><%= review.rank %></span> <br>
+	&#9661
+	</td>
+	<td>
 	<%
 	$i = 1
 	$num = 5
@@ -47,8 +76,11 @@ Tracks
 		end
 		$i += 1
 	end %>
-	<%= (User.find_by("id = #{review.user_id}")).username %>
-	<%= (User.find_by("id = #{review.user_id}")).name %> <br>
+	<%= (User.find_by("id = #{review.user_id}")).username %> <br>
 	<%= review.desc %>
 	<br>
+	</td>
+	</tr>
 <% end %>
+</table>
+</p><p></p>

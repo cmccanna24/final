@@ -5,7 +5,9 @@
 
 <% end %>
 
-<p><%= link_to "Add a New Album", "/albums/new" %></p>
+<% if cookies["user_id"].present? %>
+  <p><%= link_to "Add a New Album", "/albums/new" %></p>
+<% end %>
 
 <p><%= @albums.count %> Albums.</p>
 
@@ -16,13 +18,14 @@
     <th>Artist</th>
     <th>Year</th>
     <th>Rating</th>
+    <th>Number of Ratings</th>
     <th></th>
   </tr>
   <% @albums.each do |album| %>
     <tr>
       <td><%= image_tag album.album_cover_url, :width => 128, :height => 128 %></td>
       <td><%= link_to album.title, album_url(album.id) %></td>
-      <td><%= (Artist.find_by("id = #{album.artist_id}")).name %></td>
+      <td><%= album.artist.name %></td>
       <td><%= album.year %></td>
       <td>
         <% album.rating.times do %>
@@ -32,6 +35,7 @@
           &#9734;
         <% end %>
       </td>
+      <td>(<%= album.rating_count %>)</td>
       
     </tr>
   <% end %>

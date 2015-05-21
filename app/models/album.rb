@@ -5,5 +5,10 @@ class Album < ActiveRecord::Base
 
 	belongs_to :artist
 	belongs_to :user
+
+	validates :artist_id, :presence => true
+	validates :title, :presence => true
+	validates :year, :presence => true
+	validates :title, :presence => true
 	
 end

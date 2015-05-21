@@ -16,9 +16,10 @@ ActiveRecord::Schema.define(version: 0) do
   create_table "albums", force: :cascade do |t|
     t.integer "artist_id"
     t.string  "title"
-    t.integer "rating"
+    t.integer "rating",          default: 0
     t.integer "year"
     t.string  "album_cover_url"
+    t.integer "rating_count",    default: 0
   end
 
   add_index "albums", ["artist_id"], name: "index_albums_on_artist_id"
@@ -30,26 +31,24 @@ ActiveRecord::Schema.define(version: 0) do
   create_table "reviews", force: :cascade do |t|
     t.integer "album_id"
     t.integer "rating"
-    t.string  "desc"
+    t.text    "desc"
     t.integer "user_id"
+    t.integer "rank",     default: 0
   end
 
   add_index "reviews", ["album_id"], name: "index_reviews_on_album_id"
   add_index "reviews", ["user_id"], name: "index_reviews_on_user_id"
 
   create_table "tracks", force: :cascade do |t|
-    t.integer "artist_id"
     t.integer "album_id"
     t.string  "name"
   end
 
   add_index "tracks", ["album_id"], name: "index_tracks_on_album_id"
-  add_index "tracks", ["artist_id"], name: "index_tracks_on_artist_id"
 
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password"
-    t.string "name"
   end
 
 end

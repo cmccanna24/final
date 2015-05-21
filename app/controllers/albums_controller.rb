@@ -18,7 +18,7 @@ class AlbumsController < ApplicationController
 	end
 
 	def show
-		@reviews = Review.where("album_id = #{params["id"]}").order("id desc")
+		@reviews = Review.where("album_id = #{params["id"]}").order("rank desc")
 		if @album == nil
 			redirect_to albums_url, notice: "Album not found."
 		end
