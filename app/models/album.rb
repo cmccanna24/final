@@ -2,6 +2,8 @@ class Album < ActiveRecord::Base
 
 	has_many :tracks
 	has_many :reviews
+	has_many :tags
+  # has_many :score, :through => :albums, :source => :tags
 
 	belongs_to :artist
 	belongs_to :user

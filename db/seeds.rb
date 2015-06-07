@@ -10,6 +10,13 @@ Artist.delete_all
 Review.delete_all
 Track.delete_all
 User.delete_all
+Tag.delete_all
+Description.delete_all
+Collection.delete_all
+
+User.create username: 'cmccanna', password: 'password'
+User.create username: 'american_psycho', password: 'password'
+User.create username: 'jdoe', password: 'password'
 
 [{name: "Bruce Springsteen"},
 {name: "Miles Davis"},
@@ -24,13 +31,13 @@ User.delete_all
 	a.save
 end
 
-[{artist_id: (Artist.find_by("name = 'Bruce Springsteen'")).id, title: "Born To Run", rating: 5, year: 1975, album_cover_url: "http://assets.rollingstone.com/assets/images/list/1ccdff7c10d78ca236e7272be46db2562737945a.JPG", rating_count: 27},
-{artist_id: (Artist.find_by("name = 'Miles Davis'")).id, title: "Kind Of Blue", rating: 5, year: 1959, album_cover_url: "http://upload.wikimedia.org/wikipedia/en/9/9c/MilesDavisKindofBlue.jpg", rating_count: 14},
-{artist_id: (Artist.find_by("name = 'Van Morrison'")).id, title: "Astral Weeks", rating: 4, year: 1968, album_cover_url: "http://upload.wikimedia.org/wikipedia/en/f/f7/VanMorrisonAstralWeeks.jpg", rating_count: 18},
-{artist_id: (Artist.find_by("name = 'David Bowie'")).id, title: "The Rise And Fall Of Ziggy Stardust And The Spiders From Mars", rating: 3, year: 1972, album_cover_url: "http://upload.wikimedia.org/wikipedia/en/0/01/ZiggyStardust.jpg", rating_count: 21},
-{artist_id: (Artist.find_by("name = 'Radiohead'")).id, title: "OK Computer", rating: 4, year: 1997, album_cover_url: "http://upload.wikimedia.org/wikipedia/en/thumb/a/a1/Radiohead.okcomputer.albumart.jpg/220px-Radiohead.okcomputer.albumart.jpg", rating_count: 25},
-{artist_id: (Artist.find_by("name = 'Prince'")).id, title: "1999", rating: 4, year: 1982, album_cover_url: "http://upload.wikimedia.org/wikipedia/en/thumb/c/cb/1999_cover.jpg/220px-1999_cover.jpg", rating_count: 19},
-{artist_id: (Artist.find_by("name = 'Huey Lewis & The News'")).id, title: "Fore!", rating: 2, year: 1986, album_cover_url: "http://upload.wikimedia.org/wikipedia/en/6/68/Huey_Lewis_%26_The_News_Fore%21_CD_cover.JPG", rating_count: 9}
+[{artist_id: (Artist.find_by("name = 'Bruce Springsteen'")).id, title: "Born To Run", rating: 5, year: 1975, album_cover_url: "http://assets.rollingstone.com/assets/images/list/1ccdff7c10d78ca236e7272be46db2562737945a.JPG", rating_count: 1},
+{artist_id: (Artist.find_by("name = 'Miles Davis'")).id, title: "Kind Of Blue", rating: 4, year: 1959, album_cover_url: "http://upload.wikimedia.org/wikipedia/en/9/9c/MilesDavisKindofBlue.jpg", rating_count: 1},
+{artist_id: (Artist.find_by("name = 'Van Morrison'")).id, title: "Astral Weeks", rating: 5, year: 1968, album_cover_url: "http://upload.wikimedia.org/wikipedia/en/f/f7/VanMorrisonAstralWeeks.jpg", rating_count: 1},
+{artist_id: (Artist.find_by("name = 'David Bowie'")).id, title: "The Rise And Fall Of Ziggy Stardust And The Spiders From Mars", rating: 3, year: 1972, album_cover_url: "http://upload.wikimedia.org/wikipedia/en/0/01/ZiggyStardust.jpg", rating_count: 1},
+{artist_id: (Artist.find_by("name = 'Radiohead'")).id, title: "OK Computer", rating: 5, year: 1997, album_cover_url: "http://upload.wikimedia.org/wikipedia/en/thumb/a/a1/Radiohead.okcomputer.albumart.jpg/220px-Radiohead.okcomputer.albumart.jpg", rating_count: 1},
+{artist_id: (Artist.find_by("name = 'Prince'")).id, title: "1999", rating: 4, year: 1982, album_cover_url: "http://upload.wikimedia.org/wikipedia/en/thumb/c/cb/1999_cover.jpg/220px-1999_cover.jpg", rating_count: 1},
+{artist_id: (Artist.find_by("name = 'Huey Lewis & The News'")).id, title: "Fore!", rating: 3, year: 1986, album_cover_url: "http://upload.wikimedia.org/wikipedia/en/6/68/Huey_Lewis_%26_The_News_Fore%21_CD_cover.JPG", rating_count: 1}
 ].each do |album_hash|
 	al = Album.new
 	al.artist_id = album_hash[:artist_id]
@@ -115,29 +122,68 @@ end
 	t.save
 end
 
-[{username: "cmccanna", password: "password"},
-{username: "american_psycho", password: "password"},
-{username: "jdoe", password: "password"}
-].each do |user_hash|
-	u = User.new
-	u.username = user_hash[:username]
-	u.password = user_hash[:password]
-	u.save
+[
+  {name: "Rock"}, {name: "Epic"}, {name: "American"}, {name: "Classic"}, {name: "Heartland"}, {name: "Freedom"}, {name: "Dramatic"}, {name: "Joyous"}, {name: "Passionate"}, {name: "Theatrical"}, {name: "Elaborate"},
+  {name: "Complex"}, {name: "Mellow"}, {name: "Refined"}, {name: "Reflective"}, {name: "Sensual"}, {name: "Sophisticated"}, {name: "Elegant"}, {name: "Cool"}, {name: "Intimate"},
+  {name: "Ambitious"}, {name: "Delicate"}, {name: "Pastoral"}, {name: "Mystical"}, {name: "Spiritual"},
+  {name: "Stylish"}, {name: "Eccentric"}, {name: "Exciting"}, {name: "Sexual"}, {name: "Playful"}, {name: "Energetic"}, {name: "Eerie"},
+  {name: "Gloomy"}, {name: "Paranoid"}, {name: "Somber"}, {name: "Aggressive"}, {name: "Melancholy"},
+  {name: "Lively"}, {name: "Provocative"}, {name: "Fun"},
+  {name: "Cheerful"}, {name: "Cynical"}, {name: "Catchy"}
+].each do |tag_hash|
+  tag = Tag.new
+  tag.name = tag_hash[:name]
+  tag.save
 end
 
-[{album_id: (Album.find_by("title = 'Born To Run'")).id, user_id: (User.find_by("username = 'cmccanna'")).id, rating: 5, desc: "One of the best rock albums of all time!", rank: 3},
-{album_id: (Album.find_by("title = 'Kind Of Blue'")).id, user_id: (User.find_by("username = 'jdoe'")).id, rating: 4, desc: "Miles, Coltrane, Bill Evans, and Cannonball Adderley on one album?!", rank: 2},
-{album_id: (Album.find_by("title = 'Astral Weeks'")).id, user_id: (User.find_by("username = 'cmccanna'")).id, rating: 5, desc: "Transcendental!", rank: 9},
-{album_id: (Album.find_by("title = 'The Rise And Fall Of Ziggy Stardust And The Spiders From Mars'")).id, user_id: (User.find_by("username = 'jdoe'")).id, rating: 5, desc: "What a great album!", rank: 12},
-{album_id: (Album.find_by("title = 'OK Computer'")).id, user_id: (User.find_by("username = 'cmccanna'")).id, rating: 5, desc: "Best album of the 90s", rank: 15},
-{album_id: (Album.find_by("title = '1999'")).id, user_id: (User.find_by("username = 'jdoe'")).id, rating: 4, desc: "So funky!", rank: 6},
-{album_id: (Album.find_by("title = 'Fore!'")).id, user_id: (User.find_by("username = 'american_psycho'")).id, rating: 5, desc: "Their early work was a little too new wave for my tastes, but when Sports came out in '83, I think they really came into their own, commercially and artistically. The whole album has a clear, crisp sound, and a new sheen of consummate professionalism that really gives the songs a big boost. He's been compared to Elvis Costello, but I think Huey has a far more bitter, cynical sense of humor. In '87, Huey released this, Fore, their most accomplished album. I think their undisputed masterpiece is \"Hip to be Square\", a song so catchy, most people probably don't listen to the lyrics. But they should, because it's not just about the pleasures of conformity, and the importance of trends, it's also a personal statement about the band itself.", rank: 25}
+[
+  #Born To Run Tags
+  {album_id: (Album.find_by("title = 'Born To Run'")).id, tag_id: (Tag.find_by("name = 'Rock'")).id, tag_score: 10}, {album_id: (Album.find_by("title = 'Born To Run'")).id, tag_id: (Tag.find_by("name = 'Epic'")).id, tag_score: 7}, {album_id: (Album.find_by("title = 'Born To Run'")).id, tag_id: (Tag.find_by("name = 'American'")).id, tag_score: 7}, {album_id: (Album.find_by("title = 'Born To Run'")).id, tag_id: (Tag.find_by("name = 'Classic'")).id, tag_score: 8}, {album_id: (Album.find_by("title = 'Born To Run'")).id, tag_id: (Tag.find_by("name = 'Heartland'")).id, tag_score: 3}, {album_id: (Album.find_by("title = 'Born To Run'")).id, tag_id: (Tag.find_by("name = 'Freedom'")).id, tag_score: 4}, {album_id: (Album.find_by("title = 'Born To Run'")).id, tag_id: (Tag.find_by("name = 'Dramatic'")).id, tag_score: 2}, {album_id: (Album.find_by("title = 'Born To Run'")).id, tag_id: (Tag.find_by("name = 'Joyous'")).id, tag_score: 3}, {album_id: (Album.find_by("title = 'Born To Run'")).id, tag_id: (Tag.find_by("name = 'Passionate'")).id, tag_score: 2}, {album_id: (Album.find_by("title = 'Born To Run'")).id, tag_id: (Tag.find_by("name = 'Theatrical'")).id, tag_score: 1}, {album_id: (Album.find_by("title = 'Born To Run'")).id, tag_id: (Tag.find_by("name = 'Elaborate'")).id, tag_score: 1},
+  # Kind Of Blue Tags
+  {album_id: (Album.find_by("title = 'Kind Of Blue'")).id, tag_id: (Tag.find_by("name = 'Complex'")).id, tag_score: 10}, {album_id: (Album.find_by("title = 'Kind Of Blue'")).id, tag_id: (Tag.find_by("name = 'Mellow'")).id, tag_score: 9}, {album_id: (Album.find_by("title = 'Kind Of Blue'")).id, tag_id: (Tag.find_by("name = 'Refined'")).id, tag_score: 6}, {album_id: (Album.find_by("title = 'Kind Of Blue'")).id, tag_id: (Tag.find_by("name = 'Reflective'")).id, tag_score: 3}, {album_id: (Album.find_by("title = 'Kind Of Blue'")).id, tag_id: (Tag.find_by("name = 'Sensual'")).id, tag_score: 4}, {album_id: (Album.find_by("title = 'Kind Of Blue'")).id, tag_id: (Tag.find_by("name = 'Sophisticated'")).id, tag_score: 7}, {album_id: (Album.find_by("title = 'Kind Of Blue'")).id, tag_id: (Tag.find_by("name = 'Elegant'")).id, tag_score: 3}, {album_id: (Album.find_by("title = 'Kind Of Blue'")).id, tag_id: (Tag.find_by("name = 'Cool'")).id, tag_score: 15}, {album_id: (Album.find_by("title = 'Kind Of Blue'")).id, tag_id: (Tag.find_by("name = 'Intimate'")).id, tag_score: 5},
+  # Astral Weeks Tags
+  {album_id: (Album.find_by("title = 'Astral Weeks'")).id, tag_id: (Tag.find_by("name = 'Ambitious'")).id, tag_score: 3}, {album_id: (Album.find_by("title = 'Astral Weeks'")).id, tag_id: (Tag.find_by("name = 'Delicate'")).id, tag_score: 3}, {album_id: (Album.find_by("title = 'Astral Weeks'")).id, tag_id: (Tag.find_by("name = 'Pastoral'")).id, tag_score: 4}, {album_id: (Album.find_by("title = 'Astral Weeks'")).id, tag_id: (Tag.find_by("name = 'Intimate'")).id, tag_score: 4}, {album_id: (Album.find_by("title = 'Astral Weeks'")).id, tag_id: (Tag.find_by("name = 'Mellow'")).id, tag_score: 3}, {album_id: (Album.find_by("title = 'Astral Weeks'")).id, tag_id: (Tag.find_by("name = 'Reflective'")).id, tag_score: 7}, {album_id: (Album.find_by("title = 'Astral Weeks'")).id, tag_id: (Tag.find_by("name = 'Mystical'")).id, tag_score: 9}, {album_id: (Album.find_by("title = 'Astral Weeks'")).id, tag_id: (Tag.find_by("name = 'Spiritual'")).id, tag_score: 11},
+   # Ziggy Tags
+  {album_id: (Album.find_by("title = 'The Rise And Fall Of Ziggy Stardust And The Spiders From Mars'")).id, tag_id: (Tag.find_by("name = 'Stylish'")).id, tag_score: 6}, {album_id: (Album.find_by("title = 'The Rise And Fall Of Ziggy Stardust And The Spiders From Mars'")).id, tag_id: (Tag.find_by("name = 'Theatrical'")).id, tag_score: 5}, {album_id: (Album.find_by("title = 'The Rise And Fall Of Ziggy Stardust And The Spiders From Mars'")).id, tag_id: (Tag.find_by("name = 'Dramatic'")).id, tag_score: 5}, {album_id: (Album.find_by("title = 'The Rise And Fall Of Ziggy Stardust And The Spiders From Mars'")).id, tag_id: (Tag.find_by("name = 'Eccentric'")).id, tag_score: 7}, {album_id: (Album.find_by("title = 'The Rise And Fall Of Ziggy Stardust And The Spiders From Mars'")).id, tag_id: (Tag.find_by("name = 'Exciting'")).id, tag_score: 7}, {album_id: (Album.find_by("title = 'The Rise And Fall Of Ziggy Stardust And The Spiders From Mars'")).id, tag_id: (Tag.find_by("name = 'Sexual'")).id, tag_score: 6}, {album_id: (Album.find_by("title = 'The Rise And Fall Of Ziggy Stardust And The Spiders From Mars'")).id, tag_id: (Tag.find_by("name = 'Playful'")).id, tag_score: 3}, {album_id: (Album.find_by("title = 'The Rise And Fall Of Ziggy Stardust And The Spiders From Mars'")).id, tag_id: (Tag.find_by("name = 'Energetic'")).id, tag_score: 5}, {album_id: (Album.find_by("title = 'The Rise And Fall Of Ziggy Stardust And The Spiders From Mars'")).id, tag_id: (Tag.find_by("name = 'Eerie'")).id, tag_score: 2},
+  # OK Computer Tags
+  {album_id: (Album.find_by("title = 'OK Computer'")).id, tag_id: (Tag.find_by("name = 'Epic'")).id, tag_score: 10}, {album_id: (Album.find_by("title = 'OK Computer'")).id, tag_id: (Tag.find_by("name = 'Gloomy'")).id, tag_score: 6}, {album_id: (Album.find_by("title = 'OK Computer'")).id, tag_id: (Tag.find_by("name = 'Paranoid'")).id, tag_score: 3}, {album_id: (Album.find_by("title = 'OK Computer'")).id, tag_id: (Tag.find_by("name = 'Somber'")).id, tag_score: 4}, {album_id: (Album.find_by("title = 'OK Computer'")).id, tag_id: (Tag.find_by("name = 'Aggressive'")).id, tag_score: 4}, {album_id: (Album.find_by("title = 'OK Computer'")).id, tag_id: (Tag.find_by("name = 'Eerie'")).id, tag_score: 4}, {album_id: (Album.find_by("title = 'OK Computer'")).id, tag_id: (Tag.find_by("name = 'Dramatic'")).id, tag_score: 7}, {album_id: (Album.find_by("title = 'OK Computer'")).id, tag_id: (Tag.find_by("name = 'Theatrical'")).id, tag_score: 1}, {album_id: (Album.find_by("title = 'OK Computer'")).id, tag_id: (Tag.find_by("name = 'Melancholy'")).id, tag_score: 5},
+  # 1999 Tags
+  {album_id: (Album.find_by("title = '1999'")).id, tag_id: (Tag.find_by("name = 'Eccentric'")).id, tag_score: 6}, {album_id: (Album.find_by("title = '1999'")).id, tag_id: (Tag.find_by("name = 'Energetic'")).id, tag_score: 7}, {album_id: (Album.find_by("title = '1999'")).id, tag_id: (Tag.find_by("name = 'Joyous'")).id, tag_score: 3}, {album_id: (Album.find_by("title = '1999'")).id, tag_id: (Tag.find_by("name = 'Lively'")).id, tag_score: 7}, {album_id: (Album.find_by("title = '1999'")).id, tag_id: (Tag.find_by("name = 'Passionate'")).id, tag_score: 6}, {album_id: (Album.find_by("title = '1999'")).id, tag_id: (Tag.find_by("name = 'Playful'")).id, tag_score: 5}, {album_id: (Album.find_by("title = '1999'")).id, tag_id: (Tag.find_by("name = 'Provocative'")).id, tag_score: 14}, {album_id: (Album.find_by("title = '1999'")).id, tag_id: (Tag.find_by("name = 'Sensual'")).id, tag_score: 11}, {album_id: (Album.find_by("title = '1999'")).id, tag_id: (Tag.find_by("name = 'Sexual'")).id, tag_score: 13}, {album_id: (Album.find_by("title = '1999'")).id, tag_id: (Tag.find_by("name = 'Stylish'")).id, tag_score: 9}, {album_id: (Album.find_by("title = '1999'")).id, tag_id: (Tag.find_by("name = 'Intimate'")).id, tag_score: 6}, {album_id: (Album.find_by("title = '1999'")).id, tag_id: (Tag.find_by("name = 'Fun'")).id, tag_score: 8},
+  # Fore! Tags
+  {album_id: (Album.find_by("title = 'Fore!'")).id, tag_id: (Tag.find_by("name = 'Cheerful'")).id, tag_score: 4}, {album_id: (Album.find_by("title = 'Fore!'")).id, tag_id: (Tag.find_by("name = 'Fun'")).id, tag_score: 5}, {album_id: (Album.find_by("title = 'Fore!'")).id, tag_id: (Tag.find_by("name = 'Energetic'")).id, tag_score: 5}, {album_id: (Album.find_by("title = 'Fore!'")).id, tag_id: (Tag.find_by("name = 'Cynical'")).id, tag_score: 1}, {album_id: (Album.find_by("title = 'Fore!'")).id, tag_id: (Tag.find_by("name = 'Catchy'")).id, tag_score: 2}
+].each do |description_hash|
+  d = Description.new
+  d.album_id = description_hash[:album_id]
+  d.tag_id = description_hash[:tag_id]
+  d.tag_score = description_hash[:tag_score]
+  d.save
+end
+
+
+[{user_id: (User.find_by("username = 'cmccanna'")).id, album_id: (Album.find_by("title = 'Born To Run'")).id}, {user_id: (User.find_by("username = 'cmccanna'")).id, album_id: (Album.find_by("title = 'Kind Of Blue'")).id, tag_score: 0}, {user_id: (User.find_by("username = 'cmccanna'")).id, album_id: (Album.find_by("title = 'Astral Weeks'")).id}, {user_id: (User.find_by("username = 'cmccanna'")).id, album_id: (Album.find_by("title = '1999'")).id}, {user_id: (User.find_by("username = 'cmccanna'")).id, album_id: (Album.find_by("title = 'OK Computer'")).id}, 
+  {user_id: (User.find_by("username = 'american_psycho'")).id, album_id: (Album.find_by("title = 'Fore!'")).id}, 
+  {user_id: (User.find_by("username = 'jdoe'")).id, album_id: (Album.find_by("title = 'Born To Run'")).id}, {user_id: (User.find_by("username = 'jdoe'")).id, album_id: (Album.find_by("title = 'The Rise And Fall Of Ziggy Stardust And The Spiders From Mars'")).id}, {user_id: (User.find_by("username = 'jdoe'")).id, album_id: (Album.find_by("title = 'OK Computer'")).id}, {user_id: (User.find_by("username = 'jdoe'")).id, album_id: (Album.find_by("title = '1999'")).id}, {user_id: (User.find_by("username = 'jdoe'")).id, album_id: (Album.find_by("title = 'Fore!'")).id}
+].each do |collections_hash|
+  c = Collection.new
+  c.user_id = collections_hash[:user_id]
+  c.album_id = collections_hash[:album_id]
+  c.save
+end
+
+
+[{album_id: (Album.find_by("title = 'Born To Run'")).id, user_id: (User.find_by("username = 'cmccanna'")).id, rating: 5, desc: "One of the best rock albums of all time!", score: 2},
+{album_id: (Album.find_by("title = 'Kind Of Blue'")).id, user_id: (User.find_by("username = 'jdoe'")).id, rating: 4, desc: "Miles, Coltrane, Bill Evans, and Cannonball Adderley on one album?!", score: 1},
+{album_id: (Album.find_by("title = 'Astral Weeks'")).id, user_id: (User.find_by("username = 'cmccanna'")).id, rating: 5, desc: "Transcendental!", score: 1},
+{album_id: (Album.find_by("title = 'The Rise And Fall Of Ziggy Stardust And The Spiders From Mars'")).id, user_id: (User.find_by("username = 'jdoe'")).id, rating: 3, desc: "What a great album!", score: 3},
+{album_id: (Album.find_by("title = 'OK Computer'")).id, user_id: (User.find_by("username = 'cmccanna'")).id, rating: 5, desc: "Best album of the 90s", score: 2},
+{album_id: (Album.find_by("title = '1999'")).id, user_id: (User.find_by("username = 'jdoe'")).id, rating: 4, desc: "So funky!", score: 2},
+{album_id: (Album.find_by("title = 'Fore!'")).id, user_id: (User.find_by("username = 'american_psycho'")).id, rating: 3, desc: "Their early work was a little too new wave for my tastes, but when Sports came out in '83, I think they really came into their own, commercially and artistically. The whole album has a clear, crisp sound, and a new sheen of consummate professionalism that really gives the songs a big boost. He's been compared to Elvis Costello, but I think Huey has a far more bitter, cynical sense of humor. In '87, Huey released this, Fore, their most accomplished album. I think their undisputed masterpiece is \"Hip to be Square\", a song so catchy, most people probably don't listen to the lyrics. But they should, because it's not just about the pleasures of conformity, and the importance of trends, it's also a personal statement about the band itself.", score: 1}
 ].each do |review_hash|
 	r = Review.new
 	r.album_id = review_hash[:album_id]
 	r.user_id = review_hash[:user_id]
 	r.rating = review_hash[:rating]
 	r.desc = review_hash[:desc]
-	r.rank = review_hash[:rank]
+	r.score = review_hash[:score]
 	r.save
 end

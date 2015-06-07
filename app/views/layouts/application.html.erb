@@ -11,14 +11,18 @@
 <body>
 
   <div class="container">
-
     <h1><%= link_to "Record Collector", "/" %>
-      <% if cookies["user_id"].present? %>
-        <small>&#9835 <%= User.find_by("id = #{cookies[:user_id]}").username %> &#9835</small>
+      <% if session["user_id"].present? %>
+        <small><%= link_to "My Collection", "/collection/#{session[:user_id]}" %></small>
+        <div class="pull-right">
+        <small>&#9835 <%= User.find_by("id = #{session[:user_id]}").username %> &#9835</small>
         <small><%= link_to "Sign Out", '/logout' %></small>
+        </div>
       <% else %>
+          <div class="pull-right">
           <small><%= link_to "Sign Up", '/signup' %></small>
           <small><%= link_to "Sign In", '/login' %></small>
+          </div>
       <% end %>
     </h1>
 

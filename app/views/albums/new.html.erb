@@ -6,14 +6,9 @@
   </div>
 
   <div>
-    <label for="artist_id">Artist: </label>
-    <select name="artist_id">
-      <% @artists.each do |artist| %>
-        <option value="<%= artist.id %>">
-          <%= artist.name %>
-        </option>
-      <% end %>
-    </select>
+    
+    <label for="artist">Artist:</label>
+    <input size="40" name="artist" id="artist" placeholder="Example: Bruce Springsteen">
   </div>
 
   <div>
@@ -24,11 +19,6 @@
   <div>
     <label for="poster_url">Link to Poster:</label>
     <input size="80" name="poster_url" id="poster_url" type="url">
-  </div>
-
-  <div>
-    <label for="rating">Star Rating:</label>
-    <input name="rating" value="5" type="number" min="1" max="5">
   </div>
 
   <input type="submit" name="commit" value="Add Album">

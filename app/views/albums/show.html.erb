@@ -10,7 +10,7 @@
 
 	<tr>
 		<td><%= image_tag @album.album_cover_url, :width => 128, :height => 128 %></td>
-		<td><%= link_to @album.title, album_url(@album.id) %></td>
+		<td><%= @album.title %></td>
 		<td><%= @album.artist.name %></td>
 		<td><%= @album.year %></td>
 		<td>
@@ -34,10 +34,22 @@
 </ol>
 </p>
 
+
+<p>
+<h4>Album Tags</h4>
+<table>
+<% tags = Description.where("album_id = #{@album.id}").order("tag_score desc") %>
+<% tags.each do |tag| %>
+  <td style='padding:15px'>&#9651<br><span><%= tag.tag_score %> <%= (Tag.find_by("id = #{tag.tag_id}")).name %></span><br>&#9661
+  </td>
+<% end %>
+</table>
+</p>
+
+
 <p>
 <h4>Reviews</h4>
-
-<% if cookies["user_id"].present? %>
+<% if session["user_id"].present? %>
 	<h5>Write a Review</h5>
 	<%= form_tag "/reviews" do %>
 	  <select name="rating">
@@ -59,7 +71,7 @@
 	<tr>
 	<td>
 	&#9651 <br>
-	<span><%= review.rank %></span> <br>
+	<span><%= review.score %></span> <br>
 	&#9661
 	</td>
 	<td>

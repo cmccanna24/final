@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
   # delete '/albums/:id' => 'albums#destroy'
 
+  get "/collection/:id" => 'users#show'
+
   get "/signup" => 'users#new'
   post "/users" => 'users#create'
 

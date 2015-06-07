@@ -15,11 +15,23 @@ Track
 
 User
   username: string
-  password: string
+  password_digest: string
 
 Review
   album_id: integer
   user_id: integer
   rating: integer
   desc: text
-  rank: integer(0)
+  score: integer(0)
+
+Tag
+  name: string
+
+Description
+  album_id: integer
+  tag_id: integer
+  tag_score: integer(0)
+
+Collection
+  user_id: integer
+  album_id: integer

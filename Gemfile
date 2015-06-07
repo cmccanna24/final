@@ -43,5 +43,7 @@ group :development, :test do
   gem 'spring'
   gem 'quiet_assets'
   gem 'ez'
+  gem 'bcrypt', '~> 3.1.7'
+
 end
 

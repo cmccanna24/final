@@ -28,16 +28,37 @@ ActiveRecord::Schema.define(version: 0) do
     t.string "name"
   end
 
+  create_table "collections", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "album_id"
+  end
+
+  add_index "collections", ["album_id"], name: "index_collections_on_album_id"
+  add_index "collections", ["user_id"], name: "index_collections_on_user_id"
+
+  create_table "descriptions", force: :cascade do |t|
+    t.integer "album_id"
+    t.integer "tag_id"
+    t.integer "tag_score", default: 0
+  end
+
+  add_index "descriptions", ["album_id"], name: "index_descriptions_on_album_id"
+  add_index "descriptions", ["tag_id"], name: "index_descriptions_on_tag_id"
+
   create_table "reviews", force: :cascade do |t|
     t.integer "album_id"
     t.integer "rating"
     t.text    "desc"
     t.integer "user_id"
-    t.integer "rank",     default: 0
+    t.integer "score",    default: 0
   end
 
   add_index "reviews", ["album_id"], name: "index_reviews_on_album_id"
   add_index "reviews", ["user_id"], name: "index_reviews_on_user_id"
+
+  create_table "tags", force: :cascade do |t|
+    t.string "name"
+  end
 
   create_table "tracks", force: :cascade do |t|
     t.integer "album_id"
@@ -48,7 +69,7 @@ ActiveRecord::Schema.define(version: 0) do
 
   create_table "users", force: :cascade do |t|
     t.string "username"
-    t.string "password"
+    t.string "password_digest"
   end
 
 end

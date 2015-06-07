@@ -1,13 +1,4 @@
-<%= form_tag albums_url, :method => "get" do %>
-  <%= text_field_tag :keyword %>
-  <%= submit_tag "Search" %>
-<% end %>
-
-<% if session["user_id"].present? %>
-  <p><%= link_to "Add a New Album", "/albums/new" %></p>
-<% end %>
-
-<p><%= @albums.count %> Albums.</p>
+<p>You have <%= @albums.count %> albums in your collection</p>
 
 <table class="table table-striped">
   <tr>
