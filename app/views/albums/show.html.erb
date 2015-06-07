@@ -3,8 +3,10 @@
   <% if Collection.where("user_id = #{session["user_id"]}").find_by("album_id = #{@album.id}") == nil %>
     <%= link_to "Add this album to your collection", "/collections/#{@album.id}", :method => 'get' %>
   <% else %>
-    This album is in your collection
+    This album is in your collection<br>
+    <%= link_to "Remove this album from your collection", "/collections/#{@album.id}", :method => 'delete' %><br>
   <% end %>
+  <%= link_to "Edit album information", "/albums/#{@album.id}/edit" %>
   </p>
 <% end %>
 
@@ -38,9 +40,12 @@
 <p>
 <h3>Tracks</h3>
 <ol>
+<% if session["user_id"].present? %>
+  <%= link_to "Add/Edit Tracks", ""
+<% end %>
 <% tracks = Track.where("album_id = #{@album.id}") %>
 <% tracks.each do |track| %>
-	<li><%= track.name %></li>
+  <li><%= track.name %></li>
 <% end %>
 </ol>
 </p>

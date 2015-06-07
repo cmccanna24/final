@@ -1,0 +1,38 @@
+<% if @album.errors.any? %>
+  <ul>
+    <% @album.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_tag "/albums/#{@album.id}", :method => 'patch' do %>
+
+  <div>
+    <label for="title">Title:</label>
+    <input size="80" name="title" id="title" value="<%= @album.title %>">
+  </div>
+
+  <div>
+    <label for="artist">Artist:</label>
+    <input name="artist" id="artist" value="<%= Artist.find_by("id = #{@album.artist_id}").name %>">
+  </div>
+
+  <div>
+    <label for="year">Year:</label>
+    <input size="4" name="year" id="year" value="<%= @album.year %>">
+  </div>
+
+  <div>
+    <label for="album_cover_url">Link to Album Cover:</label>
+    <input size="80" name="album_cover_url" value="<%= @album.album_cover_url %>" id="album_cover_url" type="url">
+  </div>
+
+  <input type="submit" name="commit" value="Update album">
+
+<% end %>
+
+
+
+
+

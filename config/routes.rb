@@ -31,6 +31,9 @@ Rails.application.routes.draw do
   get "/reviews/increase/:id" => 'reviews#increase'
   get "/reviews/decrease/:id" => 'reviews#decrease'
 
+  get "/tracks/:id/edit" => 'tracks#edit'
+  patch "/tracks/:id" => 'tracks#update'
+
   post "/reviews" => 'reviews#create'
   
   resources :albums
