@@ -1,10 +1,14 @@
-<h3>Edit "<%= Album.find_by("id = #{params[:id]}").title %>" Tracks</h3>
+<h3>Edit Track</h3>
 
-<p>
-<ol>
-<% tracks = Track.where("album_id = #{params[:id]}") %>
-<% tracks.each do |track| %>
-  <li><%= track.name %></li>
+<%= form_tag "/tracks/#{params[:id]}", :method => 'patch' do %>
+
+  <div>
+    <label for="name">Track Name:</label>
+    <input size="40" name="name" id="name" value="<%= Track.find_by("id = #{params[:id]}").name %>">
+  </div>
+
+  <input type="hidden" name="album_id" value="<%= Track.find_by("id = #{params[:id]}").album_id %>">
+
+  <input type="submit" name="commit" value="Update Track Name">
+
 <% end %>
-</ol>
-</p>

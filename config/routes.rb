@@ -29,13 +29,16 @@ Rails.application.routes.draw do
   get "/descriptions/increase/:id" => 'descriptions#increase'
   get "/descriptions/decrease/:id" => 'descriptions#decrease'
   get "/descriptions/new/:album_id" => 'descriptions#new'
-  post "/descriptions/create/:album_id" => 'descriptions#create'
+  post "/descriptions" => 'descriptions#create'
 
   get "/reviews/increase/:id" => 'reviews#increase'
   get "/reviews/decrease/:id" => 'reviews#decrease'
 
+  get "/tracks/new/:album_id" => 'tracks#new'
+  post "/tracks" => 'tracks#create'
   get "/tracks/:id/edit" => 'tracks#edit'
   patch "/tracks/:id" => 'tracks#update'
+  delete "/tracks/:id" => 'tracks#destroy'
 
   
 

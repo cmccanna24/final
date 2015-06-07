@@ -1,0 +1,14 @@
+<h3>Add A New Track</h3>
+
+<%= form_tag "/tracks", :method => 'post' do %>
+
+  <div>
+    <label for="name">Track Name:</label>
+    <input size="40" name="name" id="name">
+  </div>
+
+  <input type="hidden" name="album_id" value="<%= params[:album_id] %>">
+
+  <input type="submit" name="commit" value="Add New Track">
+
+<% end %>
