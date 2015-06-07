@@ -15,7 +15,9 @@ Rails.application.routes.draw do
 
   # delete '/albums/:id' => 'albums#destroy'
 
-  get "/collection/:id" => 'users#show'
+  get "/users/:id" => 'users#show'
+  get "/collections/:album_id" => 'collections#new'
+  delete "collections/:album_id" => 'collections#destroy'
 
   get "/signup" => 'users#new'
   post "/users" => 'users#create'
@@ -23,6 +25,11 @@ Rails.application.routes.draw do
   get "/login" => 'sessions#new'
   get "/logout" => 'sessions#destroy'
   post "/sessions" => 'sessions#create'
+
+  get "/descriptions/increase/:id" => 'descriptions#increase'
+  get "/descriptions/decrease/:id" => 'descriptions#decrease'
+  get "/reviews/increase/:id" => 'reviews#increase'
+  get "/reviews/decrease/:id" => 'reviews#decrease'
 
   post "/reviews" => 'reviews#create'
   

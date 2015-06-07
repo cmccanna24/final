@@ -44,6 +44,7 @@ group :development, :test do
   gem 'quiet_assets'
   gem 'ez'
   gem 'bcrypt', '~> 3.1.7'
+  gem 'kaminari'
 
 end
 

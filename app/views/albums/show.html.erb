@@ -1,3 +1,14 @@
+<% if session["user_id"].present? %>
+  <p>
+  <% if Collection.where("user_id = #{session["user_id"]}").find_by("album_id = #{@album.id}") == nil %>
+    <%= link_to "Add this album to your collection", "/collections/#{@album.id}", :method => 'get' %>
+  <% else %>
+    This album is in your collection
+  <% end %>
+  </p>
+<% end %>
+
+
 <table class="table table-striped">
 	<tr>
 		<th></th>
@@ -40,7 +51,10 @@
 <table>
 <% tags = Description.where("album_id = #{@album.id}").order("tag_score desc") %>
 <% tags.each do |tag| %>
-  <td style='padding:15px'>&#9651<br><span><%= tag.tag_score %> <%= (Tag.find_by("id = #{tag.tag_id}")).name %></span><br>&#9661
+  <td style='padding:15px'>
+  <a href="/descriptions/increase/<%= tag.id %>">&#9651</a><br>
+  <span><%= tag.tag_score %> <%= (Tag.find_by("id = #{tag.tag_id}")).name %></span><br>
+  <a href="/descriptions/decrease/<%= tag.id %>">&#9661</a>
   </td>
 <% end %>
 </table>
@@ -70,9 +84,9 @@
 <% @reviews.each do |review| %>
 	<tr>
 	<td>
-	&#9651 <br>
+	<a href="/reviews/increase/<%= review.id %>">&#9651</a><br>
 	<span><%= review.score %></span> <br>
-	&#9661
+	<a href="/reviews/decrease/<%= review.id %>">&#9661</a>
 	</td>
 	<td>
 	<%

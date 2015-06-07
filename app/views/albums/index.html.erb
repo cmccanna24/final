@@ -9,6 +9,9 @@
 
 <p><%= @albums.count %> Albums.</p>
 
+<%= paginate @albums %>
+<%= page_entries_info @albums %>
+
 <table class="table table-striped">
   <tr>
     <th></th>
@@ -37,5 +40,5 @@
       
     </tr>
   <% end %>
-
 </table>
+

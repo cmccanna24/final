@@ -10,10 +10,10 @@ class AlbumsController < ApplicationController
   	if params["keyword"].present?
   		@albums = Album.where("title LIKE '%#{params["keyword"]}%'")	
     else
-      @albums = Album.all
+      @albums = Album.all.page(params[:page])
     end
   	
-  	@albums = @albums.order('title asc')
+  	@albums = @albums.order('title asc').limit(100)
   end
 
   def show

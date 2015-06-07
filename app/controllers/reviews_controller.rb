@@ -1,5 +1,28 @@
 class ReviewsController < ApplicationController
 
+	def increase
+    if session[:user_id].present?
+      r = Review.find_by("id = #{params["id"]}")
+      r.score += 1
+      r.save
+      redirect_to "/albums/#{r.album_id}"
+    else
+      redirect_to "/login", notice: "You must be logged in to add input"
+    end
+  end
+
+  def decrease
+    if session[:user_id].present?
+      r = Review.find_by("id = #{params["id"]}")
+      r.score -= 1
+      r.save
+      redirect_to "/albums/#{r.album_id}"
+    else
+      redirect_to "/login", notice: "You must be logged in to add input"
+    end
+  end
+
+
 	def create
 	    r = Review.new
 	    r.album_id = params[:album_id]
