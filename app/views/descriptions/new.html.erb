@@ -1,0 +1,15 @@
+<h3>Add a tag to "<%= Album.find_by("id = #{params[:album_id]}").title %>"</h3>
+
+<%= form_tag "/descriptions/create/#{params[:album_id]}", :method => 'post' do %>
+
+  <div>
+    <label for="tag">Tag:</label>
+    <input size="40" name="tag" id="tag">
+  </div>
+
+  <input type="hidden" name="album_id" value="<%= params[:album_id] %>">
+
+  <input type="submit" name="commit" value="Add Tag">
+
+<% end %>
+

@@ -37434,3 +37434,1465 @@ Completed 200 OK in 95ms (Views: 91.1ms | ActiveRecord: 2.8ms)
   [1m[35mAlbum Load (2.5ms)[0m  SELECT "albums".* FROM "albums"
   [1m[36mTrack Load (74.9ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE (album_id = 79)[0m
   [1m[35mTrack Load (0.4ms)[0m  SELECT  "tracks".* FROM "tracks" WHERE (album_id = 79) LIMIT 1
+  [1m[36mTrack Load (0.9ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 15:35:56 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[35mAlbum Load (0.6ms)[0m  SELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", 76]]
+  Rendered albums/show.html.erb within layouts/application (36.9ms)
+Completed 500 Internal Server Error in 158ms (ActiveRecord: 2.2ms)
+
+SyntaxError (/Users/caseymccanna/Desktop/MPCS52553/final/app/views/albums/show.html.erb:45: syntax error, unexpected '<', expecting ')'
+<% end );@output_buffer.safe_append='
+ ^
+/Users/caseymccanna/Desktop/MPCS52553/final/app/views/albums/show.html.erb:119: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/caseymccanna/Desktop/MPCS52553/final/app/views/albums/show.html.erb:121: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/albums/show.html.erb:45: syntax error, unexpected '<', expecting ')'
+  app/views/albums/show.html.erb:119: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/albums/show.html.erb:121: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.3ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.2ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (148.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (603.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (834.9ms)
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 15:35:59 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", 76]]
+  Rendered albums/show.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/caseymccanna/Desktop/MPCS52553/final/app/views/albums/show.html.erb:45: syntax error, unexpected '<', expecting ')'
+<% end );@output_buffer.safe_append='
+ ^
+/Users/caseymccanna/Desktop/MPCS52553/final/app/views/albums/show.html.erb:119: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/caseymccanna/Desktop/MPCS52553/final/app/views/albums/show.html.erb:121: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/albums/show.html.erb:45: syntax error, unexpected '<', expecting ')'
+  app/views/albums/show.html.erb:119: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/albums/show.html.erb:121: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (148.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (115.4ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (261.8ms)
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 15:37:09 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", 76]]
+  [1m[36mCollection Load (0.3ms)[0m  [1mSELECT  "collections".* FROM "collections" WHERE (user_id = 31) AND (album_id = 76) LIMIT 1[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 235]]
+  [1m[36mReview Load (0.4ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE (album_id = 76)  ORDER BY score desc[0m
+  Rendered albums/show.html.erb within layouts/application (89.5ms)
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 2.3ms)
+
+ActionView::Template::Error (undefined local variable or method `get' for #<#<Class:0x007fa1063654d0>:0x007fa107d0af98>):
+    41: <h3>Tracks</h3>
+    42: <ol>
+    43: <% if session["user_id"].present? %>
+    44:   <%= link_to "Add/Edit Tracks", "/tracks/#{@album.id}/edit", :method => get %>
+    45: <% end %>
+    46: <% tracks = Track.where("album_id = #{@album.id}") %>
+    47: <% tracks.each do |track| %>
+  app/views/albums/show.html.erb:44:in `_app_views_albums_show_html_erb___3953646592030485636_70164798787180'
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.3ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (163.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (142.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (331.7ms)
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 15:37:10 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", 76]]
+  [1m[36mCollection Load (0.3ms)[0m  [1mSELECT  "collections".* FROM "collections" WHERE (user_id = 31) AND (album_id = 76) LIMIT 1[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 235]]
+  [1m[36mReview Load (0.4ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE (album_id = 76)  ORDER BY score desc[0m
+  Rendered albums/show.html.erb within layouts/application (40.9ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined local variable or method `get' for #<#<Class:0x007fa1063654d0>:0x007fa107bb1930>):
+    41: <h3>Tracks</h3>
+    42: <ol>
+    43: <% if session["user_id"].present? %>
+    44:   <%= link_to "Add/Edit Tracks", "/tracks/#{@album.id}/edit", :method => get %>
+    45: <% end %>
+    46: <% tracks = Track.where("album_id = #{@album.id}") %>
+    47: <% tracks.each do |track| %>
+  app/views/albums/show.html.erb:44:in `_app_views_albums_show_html_erb___3953646592030485636_70164798079740'
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (145.0ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (113.2ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (252.6ms)
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 15:37:25 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", 76]]
+  [1m[36mCollection Load (0.3ms)[0m  [1mSELECT  "collections".* FROM "collections" WHERE (user_id = 31) AND (album_id = 76) LIMIT 1[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 235]]
+  [1m[36mTrack Load (0.3ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE (album_id = 76)[0m
+  [1m[35mDescription Load (0.4ms)[0m  SELECT "descriptions".* FROM "descriptions" WHERE (album_id = 76)  ORDER BY tag_score desc
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 426) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 416) LIMIT 1
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 403) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 413) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 427) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 418) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 425) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 414) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 396) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 407) LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 417) LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 395) LIMIT 1
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE (album_id = 76)  ORDER BY score desc[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  Rendered albums/show.html.erb within layouts/application (156.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+Completed 200 OK in 307ms (Views: 299.5ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/logout" for ::1 at 2015-06-07 15:37:55 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 15:37:55 -0500
+Processing by AlbumsController#index as HTML
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "albums" LIMIT 100 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "albums"
+  [1m[36mAlbum Load (0.4ms)[0m  [1mSELECT  "albums".* FROM "albums"  ORDER BY title asc LIMIT 100 OFFSET 0[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 235]]
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 227]]
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 225]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 233]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 231]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 226]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 229]]
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 228]]
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 232]]
+  Rendered albums/index.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 149ms (Views: 144.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 15:37:57 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", 76]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 235]]
+  [1m[36mTrack Load (0.4ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE (album_id = 76)[0m
+  [1m[35mDescription Load (0.5ms)[0m  SELECT "descriptions".* FROM "descriptions" WHERE (album_id = 76)  ORDER BY tag_score desc
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 426) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 416) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 403) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 413) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 427) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 418) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 425) LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 414) LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 396) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 407) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 417) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 395) LIMIT 1
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE (album_id = 76)  ORDER BY score desc[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  Rendered albums/show.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 87ms (Views: 81.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/login" for ::1 at 2015-06-07 15:38:01 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 124ms (Views: 122.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2015-06-07 15:38:06 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J5jcYxQlUKJIJzH16DfjEyeFFiXGArOz1/fkhLtSJvTxKhyDZRh4tghAcpp/Lr0REXSq5ErSEmG9QqEiqnUvkw==", "username"=>"jdoe", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "jdoe"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 152ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 15:38:06 -0500
+Processing by AlbumsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "albums" LIMIT 100 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "albums"
+  [1m[36mAlbum Load (0.5ms)[0m  [1mSELECT  "albums".* FROM "albums"  ORDER BY title asc LIMIT 100 OFFSET 0[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 235]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 227]]
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 225]]
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 233]]
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 231]]
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 226]]
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 229]]
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 228]]
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 232]]
+  Rendered albums/index.html.erb within layouts/application (31.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1[0m
+Completed 200 OK in 106ms (Views: 102.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 15:39:39 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", 76]]
+  [1m[36mCollection Load (0.4ms)[0m  [1mSELECT  "collections".* FROM "collections" WHERE (user_id = 33) AND (album_id = 76) LIMIT 1[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 235]]
+  [1m[36mTrack Load (0.3ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE (album_id = 76)[0m
+  [1m[35mDescription Load (0.3ms)[0m  SELECT "descriptions".* FROM "descriptions" WHERE (album_id = 76)  ORDER BY tag_score desc
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 426) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 416) LIMIT 1
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 403) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 413) LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 427) LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 418) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 425) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 414) LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 396) LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 407) LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 417) LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 395) LIMIT 1
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE (album_id = 76)  ORDER BY score desc[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  Rendered albums/show.html.erb within layouts/application (24.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 258ms (Views: 251.8ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/tracks/76/edit" for ::1 at 2015-06-07 15:39:41 -0500
+Processing by TracksController#edit as HTML
+  Parameters: {"authenticity_token"=>"BsEyoq1FyMfheztjKfSvfV5n5cQ3ttI9jpHkkqnkSY/Qc/JC3Hjg06EceAy+7fF/aJZZBbtmc+/kJKE0uMNA6A==", "id"=>"76"}
+  [1m[36mAlbum Load (0.7ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1[0m
+  Rendered tracks/edit.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `name' for #<Album:0x007fa10671ad50>):
+    1: <h3>Edit <%= Album.find_by("id = #{params[:id]}").name %> Tracks</h3>
+    2:  
+  app/views/tracks/edit.html.erb:1:in `_app_views_tracks_edit_html_erb__2099192620991382239_70164800542200'
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.0ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (154.4ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (145.2ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (326.2ms)
+
+
+Started GET "/tracks/76/edit" for ::1 at 2015-06-07 15:40:03 -0500
+Processing by TracksController#edit as HTML
+  Parameters: {"authenticity_token"=>"BsEyoq1FyMfheztjKfSvfV5n5cQ3ttI9jpHkkqnkSY/Qc/JC3Hjg06EceAy+7fF/aJZZBbtmc+/kJKE0uMNA6A==", "id"=>"76"}
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1
+  Rendered tracks/edit.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `name' for #<Album:0x007fa104b5d360>):
+    1: <h3>Edit <%= Album.find_by("id = #{params["id"]}").name %> Tracks</h3>
+  app/views/tracks/edit.html.erb:1:in `_app_views_tracks_edit_html_erb__2099192620991382239_70164772911020'
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.2ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (141.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (127.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (286.4ms)
+  [1m[35mAlbum Load (18.6ms)[0m  SELECT  "albums".* FROM "albums" WHERE (id = 77) LIMIT 1
+
+
+Started GET "/tracks/76/edit" for ::1 at 2015-06-07 15:41:32 -0500
+Processing by TracksController#edit as HTML
+  Parameters: {"authenticity_token"=>"BsEyoq1FyMfheztjKfSvfV5n5cQ3ttI9jpHkkqnkSY/Qc/JC3Hjg06EceAy+7fF/aJZZBbtmc+/kJKE0uMNA6A==", "id"=>"76"}
+  Rendered tracks/edit.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1[0m
+Completed 200 OK in 346ms (Views: 342.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tracks/76/edit" for ::1 at 2015-06-07 15:42:17 -0500
+Processing by TracksController#edit as HTML
+  Parameters: {"id"=>"76"}
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1
+  Rendered tracks/edit.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `name' for #<Album:0x007fa1078c32f0>):
+    1: <h3>Edit <%= Album.find_by("id = #{params[:id]}").name %> Tracks</h3>
+  app/views/tracks/edit.html.erb:1:in `_app_views_tracks_edit_html_erb__2099192620991382239_70164796625660'
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.2ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (142.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (144.2ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (333.5ms)
+  [1m[36mAlbum Load (1.1ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+
+
+Started GET "/tracks/76/edit" for ::1 at 2015-06-07 15:42:31 -0500
+Processing by TracksController#edit as HTML
+  Parameters: {"id"=>"76"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1[0m
+  Rendered tracks/edit.html.erb within layouts/application (2.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 132ms (Views: 131.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tracks/76/edit" for ::1 at 2015-06-07 15:42:43 -0500
+Processing by TracksController#edit as HTML
+  Parameters: {"id"=>"76"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1[0m
+  Rendered tracks/edit.html.erb within layouts/application (2.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tracks/76/edit" for ::1 at 2015-06-07 15:44:02 -0500
+Processing by TracksController#edit as HTML
+  Parameters: {"id"=>"76"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1[0m
+  [1m[35mTrack Load (0.3ms)[0m  SELECT "tracks".* FROM "tracks" WHERE (album_id = 76)
+  Rendered tracks/edit.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1[0m
+Completed 200 OK in 181ms (Views: 179.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tracks/76/edit" for ::1 at 2015-06-07 15:44:20 -0500
+Processing by TracksController#edit as HTML
+  Parameters: {"id"=>"76"}
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1
+  [1m[36mTrack Load (0.3ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE (album_id = 76)[0m
+  Rendered tracks/edit.html.erb within layouts/application (12.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 77ms (Views: 73.9ms | ActiveRecord: 0.9ms)
+  [1m[35mTag Load (1.8ms)[0m  SELECT "tags".* FROM "tags"
+  [1m[36mDescription Load (2.1ms)[0m  [1mSELECT "descriptions".* FROM "descriptions"[0m
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 15:51:40 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[36mAlbum Load (0.5ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", 76]]
+  [1m[35mCollection Load (0.4ms)[0m  SELECT  "collections".* FROM "collections" WHERE (user_id = 33) AND (album_id = 76) LIMIT 1
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 235]]
+  [1m[35mTrack Load (0.5ms)[0m  SELECT "tracks".* FROM "tracks" WHERE (album_id = 76)
+  [1m[36mDescription Load (0.4ms)[0m  [1mSELECT "descriptions".* FROM "descriptions" WHERE (album_id = 76)  ORDER BY tag_score desc[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 426) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 416) LIMIT 1[0m
+  [1m[35mTag Load (0.4ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 403) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 413) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 427) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 418) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 425) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 414) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 396) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 407) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 417) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 395) LIMIT 1[0m
+  [1m[35mReview Load (0.4ms)[0m  SELECT "reviews".* FROM "reviews" WHERE (album_id = 76)  ORDER BY score desc
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  Rendered albums/show.html.erb within layouts/application (243.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1[0m
+Completed 200 OK in 534ms (Views: 439.1ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 15:53:50 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", 76]]
+  [1m[36mCollection Load (0.3ms)[0m  [1mSELECT  "collections".* FROM "collections" WHERE (user_id = 33) AND (album_id = 76) LIMIT 1[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 235]]
+  [1m[36mTrack Load (0.4ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE (album_id = 76)[0m
+  [1m[35mDescription Load (0.5ms)[0m  SELECT "descriptions".* FROM "descriptions" WHERE (album_id = 76)  ORDER BY tag_score desc
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 426) LIMIT 1[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 416) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 403) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 413) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 427) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 418) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 425) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 414) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 396) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 407) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 417) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 395) LIMIT 1
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE (album_id = 76)  ORDER BY score desc[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  Rendered albums/show.html.erb within layouts/application (187.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 418ms (Views: 368.1ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/descriptions/new/76" for ::1 at 2015-06-07 15:53:54 -0500
+
+ActionController::RoutingError (No route matches [GET] "/descriptions/new/76"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/caseymccanna/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/caseymccanna/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/caseymccanna/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (193.3ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (177.0ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (367.2ms)
+
+
+Started GET "/descriptions/new/76" for ::1 at 2015-06-07 15:54:47 -0500
+
+ActionController::RoutingError (No route matches [GET] "/descriptions/new/76"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/caseymccanna/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/caseymccanna/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/caseymccanna/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (185.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (143.4ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (348.7ms)
+
+
+Started GET "/descriptions/new/76" for ::1 at 2015-06-07 15:55:04 -0500
+Processing by DescriptionsController#new as HTML
+  Parameters: {"authenticity_token"=>"J+XtxodBx3dv3AYoOZCNZqhU1nsM2IIwvjqrsLil72TxVy0m9nzvYy+7RUeuidNknqVquoAII+LUj+4WqYLmAw==", "album_id"=>"76"}
+  [1m[36mAlbum Load (0.9ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1[0m
+  Rendered descriptions/new.html.erb within layouts/application (49.6ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 348ms (Views: 344.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/descriptions/new/76" for ::1 at 2015-06-07 15:55:21 -0500
+Processing by DescriptionsController#new as HTML
+  Parameters: {"album_id"=>"76"}
+  [1m[36mAlbum Load (0.4ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1[0m
+  Rendered descriptions/new.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 139ms (Views: 137.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/descriptions/new/76" for ::1 at 2015-06-07 15:57:04 -0500
+
+NoMethodError (undefined method `poast' for #<ActionDispatch::Routing::Mapper:0x007fa1063374b8>):
+  config/routes.rb:32:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (136.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (229.0ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (568.0ms)
+
+
+Started GET "/descriptions/new/76" for ::1 at 2015-06-07 15:57:16 -0500
+Processing by DescriptionsController#new as HTML
+  Parameters: {"album_id"=>"76"}
+  [1m[36mAlbum Load (0.8ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1[0m
+  Rendered descriptions/new.html.erb within layouts/application (41.5ms)
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 1.4ms)
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <h3>Add a tag to "<%= Album.find_by("id = #{params[:album_id]}").title %>"</h3>
+    2: 
+    3: <%= form_tag "/descriptions/create/#{@album.id}", :method => 'post' do %>
+    4: 
+    5:   <div>
+    6:     <label for="tag">Tag:</label>
+  app/views/descriptions/new.html.erb:3:in `_app_views_descriptions_new_html_erb___4182288198431333470_70164798147920'
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (145.2ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (144.4ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (361.5ms)
+
+
+Started GET "/descriptions/new/76" for ::1 at 2015-06-07 15:57:46 -0500
+Processing by DescriptionsController#new as HTML
+  Parameters: {"album_id"=>"76"}
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1
+  Rendered descriptions/new.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1[0m
+Completed 200 OK in 157ms (Views: 154.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/descriptions/create/76" for ::1 at 2015-06-07 15:57:52 -0500
+Processing by DescriptionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rhYe+ixXDJzygupOCUGlGMWd88zILO4xy6d0glU7BYp4pN4aXWokiLLlqSGeWPsa82xPDUT8T+OhEjEkRBwM7Q==", "tag"=>"Hot", "commit"=>"Add Tag", "album_id"=>"76"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template descriptions/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/caseymccanna/Desktop/MPCS52553/final/app/views"
+  * "/Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/kaminari-0.16.3/app/views"
+):
+  actionview (4.2.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/caseymccanna/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/caseymccanna/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/caseymccanna/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/caseymccanna/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (25.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (151.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (143.0ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (323.1ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 15:58:56 -0500
+Processing by AlbumsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "albums" LIMIT 100 OFFSET 0) subquery_for_count
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "albums"[0m
+  [1m[35mAlbum Load (0.6ms)[0m  SELECT  "albums".* FROM "albums"  ORDER BY title asc LIMIT 100 OFFSET 0
+  [1m[36mArtist Load (0.3ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 235]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 227]]
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 225]]
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 233]]
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 231]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 226]]
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 229]]
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 228]]
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 232]]
+  Rendered albums/index.html.erb within layouts/application (80.7ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 361ms (Views: 332.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 15:58:59 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", 76]]
+  [1m[35mCollection Load (0.3ms)[0m  SELECT  "collections".* FROM "collections" WHERE (user_id = 33) AND (album_id = 76) LIMIT 1
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 235]]
+  [1m[35mTrack Load (0.3ms)[0m  SELECT "tracks".* FROM "tracks" WHERE (album_id = 76)
+  [1m[36mDescription Load (0.4ms)[0m  [1mSELECT "descriptions".* FROM "descriptions" WHERE (album_id = 76)  ORDER BY tag_score desc[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 426) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 416) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 403) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 413) LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 427) LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 418) LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 425) LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 414) LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 396) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 407) LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 417) LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 395) LIMIT 1[0m
+  [1m[35mReview Load (0.3ms)[0m  SELECT "reviews".* FROM "reviews" WHERE (album_id = 76)  ORDER BY score desc
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  Rendered albums/show.html.erb within layouts/application (112.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1[0m
+Completed 200 OK in 213ms (Views: 156.7ms | ActiveRecord: 6.3ms)
+  [1m[35mTag Load (3.3ms)[0m  SELECT  "tags".* FROM "tags" WHERE (name = 'Hot') LIMIT 1
+  [1m[36mDescription Load (1.4ms)[0m  [1mSELECT "descriptions".* FROM "descriptions"[0m
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 16:03:25 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", 76]]
+  [1m[36mCollection Load (0.3ms)[0m  [1mSELECT  "collections".* FROM "collections" WHERE (user_id = 33) AND (album_id = 76) LIMIT 1[0m
+  [1m[35mArtist Load (0.5ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 235]]
+  [1m[36mTrack Load (0.5ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE (album_id = 76)[0m
+  [1m[35mDescription Load (0.4ms)[0m  SELECT "descriptions".* FROM "descriptions" WHERE (album_id = 76)  ORDER BY tag_score desc
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 426) LIMIT 1[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 416) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 403) LIMIT 1[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 413) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 427) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 418) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 425) LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 414) LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 396) LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 407) LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 417) LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 395) LIMIT 1
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE (album_id = 76)  ORDER BY score desc[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  Rendered albums/show.html.erb within layouts/application (266.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 564ms (Views: 479.5ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/descriptions/new/76" for ::1 at 2015-06-07 16:03:27 -0500
+Processing by DescriptionsController#new as HTML
+  Parameters: {"authenticity_token"=>"IToAVugoqiqM2Hg2WhNOp6Trm+YxSwp43eJCCQG+Zcn3iMC2mRWCPsy/O1nNChClkhonJ72bq6q3VwevEJlsrg==", "album_id"=>"76"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1[0m
+  Rendered descriptions/new.html.erb within layouts/application (3.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/descriptions/create/76" for ::1 at 2015-06-07 16:03:31 -0500
+Processing by DescriptionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1Ly4wGPVoY7+goowgMFZ8ZXpOPncpNdiGix0eyrv4jYCDnggEuiJmr7lyV8X2AfzoxiEOFB0drBwmTHdO8jrUQ==", "tag"=>"Hot", "album_id"=>"76", "commit"=>"Add Tag"}
+  [1m[36mTag Load (1.8ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (name = 'Hot) LIMIT 1[0m
+SQLite3::SQLException: unrecognized token: "'Hot) LIMIT 1": SELECT  "tags".* FROM "tags" WHERE (name = 'Hot) LIMIT 1
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.8ms)
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: unrecognized token: "'Hot) LIMIT 1": SELECT  "tags".* FROM "tags" WHERE (name = 'Hot) LIMIT 1):
+  app/controllers/descriptions_controller.rb:8:in `create'
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (142.4ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (145.1ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (326.6ms)
+
+
+Started GET "/descriptions/new/76" for ::1 at 2015-06-07 16:03:47 -0500
+Processing by DescriptionsController#new as HTML
+  Parameters: {"album_id"=>"76"}
+  [1m[35mAlbum Load (0.7ms)[0m  SELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1
+  Rendered descriptions/new.html.erb within layouts/application (35.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1[0m
+Completed 200 OK in 173ms (Views: 169.7ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/descriptions/create/76" for ::1 at 2015-06-07 16:03:49 -0500
+Processing by DescriptionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1VbUFyY6jesTkJD6XgVtN3Moea5d6wjqwEgIOh51jqMD5BT3Vwel/1P305XJHDM1RdnFb9E7qTiq/U2cD1KHxA==", "tag"=>"Hot", "album_id"=>"76", "commit"=>"Add Tag"}
+  [1m[35mTag Load (0.4ms)[0m  SELECT  "tags".* FROM "tags" WHERE (name = 'Hot') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTag Exists (0.3ms)[0m  SELECT  1 AS one FROM "tags" WHERE "tags"."name" = 'Hot' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "Hot"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36mTag Load (1.0ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (name = 'Hot) LIMIT 1[0m
+SQLite3::SQLException: unrecognized token: "'Hot) LIMIT 1": SELECT  "tags".* FROM "tags" WHERE (name = 'Hot) LIMIT 1
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 5.4ms)
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: unrecognized token: "'Hot) LIMIT 1": SELECT  "tags".* FROM "tags" WHERE (name = 'Hot) LIMIT 1):
+  app/controllers/descriptions_controller.rb:13:in `create'
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (144.0ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (166.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (369.8ms)
+
+
+Started POST "/descriptions/create/76" for ::1 at 2015-06-07 16:04:03 -0500
+Processing by DescriptionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1VbUFyY6jesTkJD6XgVtN3Moea5d6wjqwEgIOh51jqMD5BT3Vwel/1P305XJHDM1RdnFb9E7qTiq/U2cD1KHxA==", "tag"=>"Hot", "album_id"=>"76", "commit"=>"Add Tag"}
+  [1m[35mTag Load (19.6ms)[0m  SELECT  "tags".* FROM "tags" WHERE (name = 'Hot') LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (name = 'Hot') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "descriptions" ("album_id", "tag_id") VALUES (?, ?)[0m  [["album_id", 76], ["tag_id", 431]]
+  [1m[35m (3.1ms)[0m  commit transaction
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 25.1ms)
+
+NoMethodError (undefined method `redirec_to' for #<DescriptionsController:0x007fa107939ab8>):
+  app/controllers/descriptions_controller.rb:18:in `create'
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (162.2ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (144.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (387.9ms)
+
+
+Started POST "/descriptions/create/76" for ::1 at 2015-06-07 16:04:14 -0500
+Processing by DescriptionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1VbUFyY6jesTkJD6XgVtN3Moea5d6wjqwEgIOh51jqMD5BT3Vwel/1P305XJHDM1RdnFb9E7qTiq/U2cD1KHxA==", "tag"=>"Hot", "album_id"=>"76", "commit"=>"Add Tag"}
+  [1m[36mTag Load (14.9ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (name = 'Hot') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "tags".* FROM "tags" WHERE (name = 'Hot') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (27.0ms)[0m  INSERT INTO "descriptions" ("album_id", "tag_id") VALUES (?, ?)  [["album_id", 76], ["tag_id", 431]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/show/76
+Completed 302 Found in 115ms (ActiveRecord: 46.7ms)
+
+
+Started GET "/show/76" for ::1 at 2015-06-07 16:04:14 -0500
+
+ActionController::RoutingError (No route matches [GET] "/show/76"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/caseymccanna/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/caseymccanna/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/caseymccanna/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (189.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (145.0ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (346.3ms)
+
+
+Started POST "/descriptions/create/76" for ::1 at 2015-06-07 16:04:38 -0500
+Processing by DescriptionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1VbUFyY6jesTkJD6XgVtN3Moea5d6wjqwEgIOh51jqMD5BT3Vwel/1P305XJHDM1RdnFb9E7qTiq/U2cD1KHxA==", "tag"=>"Hot", "album_id"=>"76", "commit"=>"Add Tag"}
+  [1m[35mTag Load (19.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (name = 'Hot') LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (name = 'Hot') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "descriptions" ("album_id", "tag_id") VALUES (?, ?)[0m  [["album_id", 76], ["tag_id", 431]]
+  [1m[35m (7.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/albums/76
+Completed 302 Found in 84ms (ActiveRecord: 28.5ms)
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 16:04:39 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", 76]]
+  [1m[35mCollection Load (0.4ms)[0m  SELECT  "collections".* FROM "collections" WHERE (user_id = 33) AND (album_id = 76) LIMIT 1
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 235]]
+  [1m[35mTrack Load (0.3ms)[0m  SELECT "tracks".* FROM "tracks" WHERE (album_id = 76)
+  [1m[36mDescription Load (0.3ms)[0m  [1mSELECT "descriptions".* FROM "descriptions" WHERE (album_id = 76)  ORDER BY tag_score desc[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 426) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 416) LIMIT 1[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 403) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 413) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 427) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 418) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 425) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 414) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 396) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 407) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 417) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 395) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1
+  [1m[36mReview Load (0.4ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE (album_id = 76)  ORDER BY score desc[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  Rendered albums/show.html.erb within layouts/application (124.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 320ms (Views: 270.8ms | ActiveRecord: 7.4ms)
+  [1m[35mDescription Load (4.1ms)[0m  SELECT "descriptions".* FROM "descriptions"
+  [1m[36mDescription Load (0.5ms)[0m  [1mSELECT  "descriptions".* FROM "descriptions" WHERE (album_id = 76 AND tag_id = 431) LIMIT 1[0m
+  [1m[35mDescription Load (0.4ms)[0m  SELECT  "descriptions".* FROM "descriptions" WHERE (album_id = 76 AND tag_id = 439) LIMIT 1
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 16:08:58 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[36mAlbum Load (0.4ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", 76]]
+  [1m[35mCollection Load (0.3ms)[0m  SELECT  "collections".* FROM "collections" WHERE (user_id = 33) AND (album_id = 76) LIMIT 1
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 235]]
+  [1m[35mTrack Load (0.4ms)[0m  SELECT "tracks".* FROM "tracks" WHERE (album_id = 76)
+  [1m[36mDescription Load (0.4ms)[0m  [1mSELECT "descriptions".* FROM "descriptions" WHERE (album_id = 76)  ORDER BY tag_score desc[0m
+  [1m[35mTag Load (22.6ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 426) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 416) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 403) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 413) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 427) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 418) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 425) LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 414) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 396) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 407) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 417) LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 395) LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1
+  [1m[36mReview Load (0.4ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE (album_id = 76)  ORDER BY score desc[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  Rendered albums/show.html.erb within layouts/application (194.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 1001ms (Views: 899.6ms | ActiveRecord: 31.5ms)
+
+
+Started GET "/descriptions/new/76" for ::1 at 2015-06-07 16:09:04 -0500
+Processing by DescriptionsController#new as HTML
+  Parameters: {"authenticity_token"=>"A4+Tomd0GBEZnJy+vz9vV6Rd63e9vwlmxi9RLVRQ4QHVPVNCFkkwBVn739EoJjFVkqxXtjFvqLSsmhSLRXfoZg==", "album_id"=>"76"}
+  [1m[36mAlbum Load (0.5ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1[0m
+  Rendered descriptions/new.html.erb within layouts/application (3.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 85ms (Views: 82.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/descriptions/create/76" for ::1 at 2015-06-07 16:09:08 -0500
+Processing by DescriptionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C5zvPbrFfGH2jdjhxGflO1Iycj1g8cVJh2GX7MHSseXdLi/dy/hUdbbqm45Tfrs5ZMPO/OwhZJvt1NJK0PW4gg==", "tag"=>"Sexual", "album_id"=>"76", "commit"=>"Add Tag"}
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (name = 'Sexual') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "tags".* FROM "tags" WHERE (name = 'Sexual') LIMIT 1
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms)
+
+NameError (uninitialized constant DescriptionsController::Decription):
+  app/controllers/descriptions_controller.rb:14:in `create'
+
+
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (139.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (155.4ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/caseymccanna/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (346.5ms)
+
+
+Started GET "/descriptions/new/76" for ::1 at 2015-06-07 16:09:26 -0500
+Processing by DescriptionsController#new as HTML
+  Parameters: {"album_id"=>"76"}
+  [1m[36mAlbum Load (0.7ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1[0m
+  Rendered descriptions/new.html.erb within layouts/application (31.9ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 204ms (Views: 201.6ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/descriptions/create/76" for ::1 at 2015-06-07 16:09:28 -0500
+Processing by DescriptionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gAebVTzWXWUwd7zISCuRj4j9EqwY8yNkmY9rc/efAvdWtVu1Tet1cXAQ/6ffMs+NvgyubZQjgrbzOi7V5rgLkA==", "tag"=>"Sexual", "album_id"=>"76", "commit"=>"Add Tag"}
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (name = 'Sexual') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "tags".* FROM "tags" WHERE (name = 'Sexual') LIMIT 1
+  [1m[36mDescription Load (0.3ms)[0m  [1mSELECT  "descriptions".* FROM "descriptions" WHERE (album_id = 76 AND tag_id = 416) LIMIT 1[0m
+Redirected to http://localhost:3000/albums/76
+Completed 302 Found in 82ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 16:09:28 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", 76]]
+  [1m[36mCollection Load (0.4ms)[0m  [1mSELECT  "collections".* FROM "collections" WHERE (user_id = 33) AND (album_id = 76) LIMIT 1[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 235]]
+  [1m[36mTrack Load (0.3ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE (album_id = 76)[0m
+  [1m[35mDescription Load (0.4ms)[0m  SELECT "descriptions".* FROM "descriptions" WHERE (album_id = 76)  ORDER BY tag_score desc
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 426) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 416) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 403) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 413) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 427) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 418) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 425) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 414) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 396) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 407) LIMIT 1
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 417) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 395) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1[0m
+  [1m[35mReview Load (0.4ms)[0m  SELECT "reviews".* FROM "reviews" WHERE (album_id = 76)  ORDER BY score desc
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  Rendered albums/show.html.erb within layouts/application (152.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1[0m
+Completed 200 OK in 233ms (Views: 199.3ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/descriptions/increase/370" for ::1 at 2015-06-07 16:09:37 -0500
+Processing by DescriptionsController#increase as HTML
+  Parameters: {"id"=>"370"}
+  [1m[35mDescription Load (0.6ms)[0m  SELECT  "descriptions".* FROM "descriptions" WHERE (id = 370) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "descriptions" SET "tag_score" = ? WHERE "descriptions"."id" = ?  [["tag_score", 14], ["id", 370]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/albums/76
+Completed 302 Found in 10ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 16:09:37 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", 76]]
+  [1m[36mCollection Load (0.3ms)[0m  [1mSELECT  "collections".* FROM "collections" WHERE (user_id = 33) AND (album_id = 76) LIMIT 1[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 235]]
+  [1m[36mTrack Load (0.7ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE (album_id = 76)[0m
+  [1m[35mDescription Load (0.4ms)[0m  SELECT "descriptions".* FROM "descriptions" WHERE (album_id = 76)  ORDER BY tag_score desc
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 426) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 416) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 403) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 413) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 427) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 418) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 425) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 414) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 396) LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 407) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 417) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 395) LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1[0m
+  [1m[35mReview Load (0.4ms)[0m  SELECT "reviews".* FROM "reviews" WHERE (album_id = 76)  ORDER BY score desc
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  Rendered albums/show.html.erb within layouts/application (34.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1[0m
+Completed 200 OK in 92ms (Views: 84.7ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/descriptions/new/76" for ::1 at 2015-06-07 16:09:41 -0500
+Processing by DescriptionsController#new as HTML
+  Parameters: {"authenticity_token"=>"y+YhzW4t0uo9jAuItGlib/54H8xTIxBUHR2k1c0w65MdVOEtHxD6/n3rSOcjcDxtyImjDd/zsYZ3qOFz3Bfi9A==", "album_id"=>"76"}
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1
+  Rendered descriptions/new.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1[0m
+Completed 200 OK in 103ms (Views: 101.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/descriptions/create/76" for ::1 at 2015-06-07 16:09:45 -0500
+Processing by DescriptionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vzf+FXrjHkfHka5Jalix/xVjOxxrw8zHIiPMHxBHi2xphT71C942U4f27Sb9Qe/9I5KH3ecTbRVIlom5AWCCCw==", "tag"=>"Hot!", "album_id"=>"76", "commit"=>"Add Tag"}
+  [1m[35mTag Load (0.3ms)[0m  SELECT  "tags".* FROM "tags" WHERE (name = 'Hot!') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTag Exists (0.3ms)[0m  SELECT  1 AS one FROM "tags" WHERE "tags"."name" = 'Hot!' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "Hot!"]]
+  [1m[35m (61.9ms)[0m  commit transaction
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (name = 'Hot!') LIMIT 1[0m
+  [1m[35mDescription Load (0.2ms)[0m  SELECT  "descriptions".* FROM "descriptions" WHERE (album_id = 76 AND tag_id = 432) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "descriptions" ("album_id", "tag_id") VALUES (?, ?)  [["album_id", 76], ["tag_id", 432]]
+  [1m[36m (51.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/albums/76
+Completed 302 Found in 144ms (ActiveRecord: 116.2ms)
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 16:09:45 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", 76]]
+  [1m[36mCollection Load (0.3ms)[0m  [1mSELECT  "collections".* FROM "collections" WHERE (user_id = 33) AND (album_id = 76) LIMIT 1[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 235]]
+  [1m[36mTrack Load (0.3ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE (album_id = 76)[0m
+  [1m[35mDescription Load (0.6ms)[0m  SELECT "descriptions".* FROM "descriptions" WHERE (album_id = 76)  ORDER BY tag_score desc
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 426) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 416) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 403) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 413) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 427) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 418) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 425) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 414) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 396) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 407) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 417) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 395) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 432) LIMIT 1
+  [1m[36mReview Load (0.4ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE (album_id = 76)  ORDER BY score desc[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  Rendered albums/show.html.erb within layouts/application (34.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 94ms (Views: 87.1ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/descriptions/new/76" for ::1 at 2015-06-07 16:09:51 -0500
+Processing by DescriptionsController#new as HTML
+  Parameters: {"authenticity_token"=>"V4jZCH/dGlXqM4ejvnGxmmhgzyMX8UcbZYWqSLm1mJWBOhnoDuAyQapUxMwpaO+YXpFz4psh5skPMO/uqJKR8g==", "album_id"=>"76"}
+  [1m[36mAlbum Load (0.4ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE (id = 76) LIMIT 1[0m
+  Rendered descriptions/new.html.erb within layouts/application (2.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 61ms (Views: 59.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/descriptions/create/76" for ::1 at 2015-06-07 16:09:53 -0500
+Processing by DescriptionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qDhc9uZCbw2JhoTdzLRBOwsWnjJs9c/Azhxz+r9BFb9+ipwWl39HGcnhx7JbrR85Peci8+AlbhKkqTZcrmYc2A==", "tag"=>"qewrbhaqe", "album_id"=>"76", "commit"=>"Add Tag"}
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (name = 'qewrbhaqe') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTag Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = 'qewrbhaqe' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "tags" ("name") VALUES (?)  [["name", "qewrbhaqe"]]
+  [1m[36m (17.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT  "tags".* FROM "tags" WHERE (name = 'qewrbhaqe') LIMIT 1
+  [1m[36mDescription Load (0.2ms)[0m  [1mSELECT  "descriptions".* FROM "descriptions" WHERE (album_id = 76 AND tag_id = 433) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "descriptions" ("album_id", "tag_id") VALUES (?, ?)[0m  [["album_id", 76], ["tag_id", 433]]
+  [1m[35m (3.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/albums/76
+Completed 302 Found in 33ms (ActiveRecord: 23.2ms)
+
+
+Started GET "/albums/76" for ::1 at 2015-06-07 16:09:53 -0500
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", 76]]
+  [1m[35mCollection Load (0.3ms)[0m  SELECT  "collections".* FROM "collections" WHERE (user_id = 33) AND (album_id = 76) LIMIT 1
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 235]]
+  [1m[35mTrack Load (0.3ms)[0m  SELECT "tracks".* FROM "tracks" WHERE (album_id = 76)
+  [1m[36mDescription Load (0.3ms)[0m  [1mSELECT "descriptions".* FROM "descriptions" WHERE (album_id = 76)  ORDER BY tag_score desc[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 426) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 416) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 403) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 413) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 427) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 418) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 425) LIMIT 1
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 414) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 396) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 407) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 417) LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 395) LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 431) LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE (id = 432) LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE (id = 433) LIMIT 1
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE (album_id = 76)  ORDER BY score desc[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (id = 31) LIMIT 1[0m
+  Rendered albums/show.html.erb within layouts/application (34.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE (id = 33) LIMIT 1
+Completed 200 OK in 93ms (Views: 86.8ms | ActiveRecord: 4.8ms)

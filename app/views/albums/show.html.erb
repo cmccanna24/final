@@ -41,7 +41,7 @@
 <h3>Tracks</h3>
 <ol>
 <% if session["user_id"].present? %>
-  <%= link_to "Add/Edit Tracks", ""
+  <%= link_to "Add/Edit Tracks", "/tracks/#{@album.id}/edit", :method => 'get' %>
 <% end %>
 <% tracks = Track.where("album_id = #{@album.id}") %>
 <% tracks.each do |track| %>
@@ -53,6 +53,9 @@
 
 <p>
 <h4>Album Tags</h4>
+<% if session["user_id"].present? %>
+  <%= link_to "Add a Tag", "/descriptions/new/#{@album.id}", :method => 'get' %>
+<% end %>
 <table>
 <% tags = Description.where("album_id = #{@album.id}").order("tag_score desc") %>
 <% tags.each do |tag| %>

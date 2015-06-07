@@ -1,0 +1,10 @@
+<h3>Edit "<%= Album.find_by("id = #{params[:id]}").title %>" Tracks</h3>
+
+<p>
+<ol>
+<% tracks = Track.where("album_id = #{params[:id]}") %>
+<% tracks.each do |track| %>
+  <li><%= track.name %></li>
+<% end %>
+</ol>
+</p>
