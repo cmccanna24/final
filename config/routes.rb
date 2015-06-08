@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'password_resets/new'
+
   root 'albums#index'
 
   #########################################################
@@ -46,5 +48,6 @@ Rails.application.routes.draw do
   post "/reviews" => 'reviews#create'
   
   resources :albums
+  resources :password_resets
 
 end

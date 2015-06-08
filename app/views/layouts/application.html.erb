@@ -15,7 +15,7 @@
       <% if session["user_id"].present? %>
         <small><%= link_to "My Collection", "/users/#{session[:user_id]}" %></small>
         <div class="pull-right">
-        <small>&#9835 <%= User.find_by("id = #{session[:user_id]}").username %> &#9835</small>
+        <small>&#9835 <%= User.find_by("id = #{session[:user_id]}").email %> &#9835</small>
         <small><%= link_to "Sign Out", '/logout' %></small>
         </div>
       <% else %>

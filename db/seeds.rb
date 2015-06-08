@@ -14,9 +14,9 @@ Tag.delete_all
 Description.delete_all
 Collection.delete_all
 
-User.create username: 'cmccanna', password: 'password'
-User.create username: 'american_psycho', password: 'password'
-User.create username: 'jdoe', password: 'password'
+User.create email: 'cmccanna@example.com', password: 'password'
+User.create email: 'patrick.bateman@example.com', password: 'password'
+User.create email: 'jdoe@example.com', password: 'password'
 
 [{name: "Bruce Springsteen"},
 {name: "Miles Davis"},
@@ -160,9 +160,9 @@ end
 end
 
 
-[{user_id: (User.find_by("username = 'cmccanna'")).id, album_id: (Album.find_by("title = 'Born To Run'")).id}, {user_id: (User.find_by("username = 'cmccanna'")).id, album_id: (Album.find_by("title = 'Kind Of Blue'")).id, tag_score: 0}, {user_id: (User.find_by("username = 'cmccanna'")).id, album_id: (Album.find_by("title = 'Astral Weeks'")).id}, {user_id: (User.find_by("username = 'cmccanna'")).id, album_id: (Album.find_by("title = '1999'")).id}, {user_id: (User.find_by("username = 'cmccanna'")).id, album_id: (Album.find_by("title = 'OK Computer'")).id}, 
-  {user_id: (User.find_by("username = 'american_psycho'")).id, album_id: (Album.find_by("title = 'Fore!'")).id}, 
-  {user_id: (User.find_by("username = 'jdoe'")).id, album_id: (Album.find_by("title = 'Born To Run'")).id}, {user_id: (User.find_by("username = 'jdoe'")).id, album_id: (Album.find_by("title = 'The Rise And Fall Of Ziggy Stardust And The Spiders From Mars'")).id}, {user_id: (User.find_by("username = 'jdoe'")).id, album_id: (Album.find_by("title = 'OK Computer'")).id}, {user_id: (User.find_by("username = 'jdoe'")).id, album_id: (Album.find_by("title = '1999'")).id}, {user_id: (User.find_by("username = 'jdoe'")).id, album_id: (Album.find_by("title = 'Fore!'")).id}
+[{user_id: (User.find_by("email = 'cmccanna@example.com'")).id, album_id: (Album.find_by("title = 'Born To Run'")).id}, {user_id: (User.find_by("email = 'cmccanna@example.com'")).id, album_id: (Album.find_by("title = 'Kind Of Blue'")).id, tag_score: 0}, {user_id: (User.find_by("email = 'cmccanna@example.com'")).id, album_id: (Album.find_by("title = 'Astral Weeks'")).id}, {user_id: (User.find_by("email = 'cmccanna@example.com'")).id, album_id: (Album.find_by("title = '1999'")).id}, {user_id: (User.find_by("email = 'cmccanna@example.com'")).id, album_id: (Album.find_by("title = 'OK Computer'")).id}, 
+  {user_id: (User.find_by("email = 'patrick.bateman@example.com'")).id, album_id: (Album.find_by("title = 'Fore!'")).id}, 
+  {user_id: (User.find_by("email = 'jdoe@example.com'")).id, album_id: (Album.find_by("title = 'Born To Run'")).id}, {user_id: (User.find_by("email = 'jdoe@example.com'")).id, album_id: (Album.find_by("title = 'The Rise And Fall Of Ziggy Stardust And The Spiders From Mars'")).id}, {user_id: (User.find_by("email = 'jdoe@example.com'")).id, album_id: (Album.find_by("title = 'OK Computer'")).id}, {user_id: (User.find_by("email = 'jdoe@example.com'")).id, album_id: (Album.find_by("title = '1999'")).id}, {user_id: (User.find_by("email = 'jdoe@example.com'")).id, album_id: (Album.find_by("title = 'Fore!'")).id}
 ].each do |collections_hash|
   c = Collection.new
   c.user_id = collections_hash[:user_id]
@@ -171,13 +171,13 @@ end
 end
 
 
-[{album_id: (Album.find_by("title = 'Born To Run'")).id, user_id: (User.find_by("username = 'cmccanna'")).id, rating: 5, desc: "One of the best rock albums of all time!", score: 2},
-{album_id: (Album.find_by("title = 'Kind Of Blue'")).id, user_id: (User.find_by("username = 'jdoe'")).id, rating: 4, desc: "Miles, Coltrane, Bill Evans, and Cannonball Adderley on one album?!", score: 1},
-{album_id: (Album.find_by("title = 'Astral Weeks'")).id, user_id: (User.find_by("username = 'cmccanna'")).id, rating: 5, desc: "Transcendental!", score: 1},
-{album_id: (Album.find_by("title = 'The Rise And Fall Of Ziggy Stardust And The Spiders From Mars'")).id, user_id: (User.find_by("username = 'jdoe'")).id, rating: 3, desc: "What a great album!", score: 3},
-{album_id: (Album.find_by("title = 'OK Computer'")).id, user_id: (User.find_by("username = 'cmccanna'")).id, rating: 5, desc: "Best album of the 90s", score: 2},
-{album_id: (Album.find_by("title = '1999'")).id, user_id: (User.find_by("username = 'jdoe'")).id, rating: 4, desc: "So funky!", score: 2},
-{album_id: (Album.find_by("title = 'Fore!'")).id, user_id: (User.find_by("username = 'american_psycho'")).id, rating: 3, desc: "Their early work was a little too new wave for my tastes, but when Sports came out in '83, I think they really came into their own, commercially and artistically. The whole album has a clear, crisp sound, and a new sheen of consummate professionalism that really gives the songs a big boost. He's been compared to Elvis Costello, but I think Huey has a far more bitter, cynical sense of humor. In '87, Huey released this, Fore, their most accomplished album. I think their undisputed masterpiece is \"Hip to be Square\", a song so catchy, most people probably don't listen to the lyrics. But they should, because it's not just about the pleasures of conformity, and the importance of trends, it's also a personal statement about the band itself.", score: 1}
+[{album_id: (Album.find_by("title = 'Born To Run'")).id, user_id: (User.find_by("email = 'cmccanna@example.com'")).id, rating: 5, desc: "One of the best rock albums of all time!", score: 2},
+{album_id: (Album.find_by("title = 'Kind Of Blue'")).id, user_id: (User.find_by("email = 'jdoe@example.com'")).id, rating: 4, desc: "Miles, Coltrane, Bill Evans, and Cannonball Adderley on one album?!", score: 1},
+{album_id: (Album.find_by("title = 'Astral Weeks'")).id, user_id: (User.find_by("email = 'cmccanna@example.com'")).id, rating: 5, desc: "Transcendental!", score: 1},
+{album_id: (Album.find_by("title = 'The Rise And Fall Of Ziggy Stardust And The Spiders From Mars'")).id, user_id: (User.find_by("email = 'jdoe@example.com'")).id, rating: 3, desc: "What a great album!", score: 3},
+{album_id: (Album.find_by("title = 'OK Computer'")).id, user_id: (User.find_by("email = 'cmccanna@example.com'")).id, rating: 5, desc: "Best album of the 90s", score: 2},
+{album_id: (Album.find_by("title = '1999'")).id, user_id: (User.find_by("email = 'jdoe@example.com'")).id, rating: 4, desc: "So funky!", score: 2},
+{album_id: (Album.find_by("title = 'Fore!'")).id, user_id: (User.find_by("email = 'patrick.bateman@example.com'")).id, rating: 3, desc: "Their early work was a little too new wave for my tastes, but when Sports came out in '83, I think they really came into their own, commercially and artistically. The whole album has a clear, crisp sound, and a new sheen of consummate professionalism that really gives the songs a big boost. He's been compared to Elvis Costello, but I think Huey has a far more bitter, cynical sense of humor. In '87, Huey released this, Fore, their most accomplished album. I think their undisputed masterpiece is \"Hip to be Square\", a song so catchy, most people probably don't listen to the lyrics. But they should, because it's not just about the pleasures of conformity, and the importance of trends, it's also a personal statement about the band itself.", score: 1}
 ].each do |review_hash|
 	r = Review.new
 	r.album_id = review_hash[:album_id]

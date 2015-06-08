@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150608000102) do
 
   create_table "albums", force: :cascade do |t|
     t.integer "artist_id"
@@ -68,8 +68,8 @@ ActiveRecord::Schema.define(version: 0) do
   add_index "tracks", ["album_id"], name: "index_tracks_on_album_id"
 
   create_table "users", force: :cascade do |t|
-    t.string "username"
     t.string "password_digest"
+    t.string "email"
   end
 
 end

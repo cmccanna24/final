@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by(username: params[:username])
+    user = User.find_by(email: params[:email])
     if user
       if user.authenticate(params[:password])
         session["user_id"] = user.id
@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
         redirect_to root_url, notice: "Unknown password."
       end
     else
-      redirect_to root_url, notice: "Unknown username."
+      redirect_to root_url, notice: "Unknown email."
     end
   end
 

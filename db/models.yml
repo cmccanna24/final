@@ -14,7 +14,7 @@ Track
   name: string
 
 User
-  username: string
+  email: string
   password_digest: string
 
 Review

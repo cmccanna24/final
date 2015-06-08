@@ -120,7 +120,7 @@
 		end
 		$i += 1
 	end %>
-	<%= (User.find_by("id = #{review.user_id}")).username %> <br>
+	<%= (User.find_by("id = #{review.user_id}")).email %> <br>
 	<%= review.desc %>
 	<br>
 	</td>

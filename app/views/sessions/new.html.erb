@@ -2,15 +2,20 @@
 
 <%= form_tag "/sessions" do %>
 
-	<p>
-		<%= label_tag :username %>
-		<%= text_field_tag :username %>
-	</p>
+  <div>
+    <%= label_tag :email %>
+    <%= text_field_tag :email, params[:email] %>
+  </div>
 
-	<p>
-		<%= label_tag :password %>
-		<%= password_field_tag :password %>
-	</p>
+  <div>
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+  </div>
+
+  <p>
+    <%= link_to "Forgot Password", new_password_reset_path %>
+  </p>
 
 	<%= submit_tag "Sign In" %>
+
 <% end %>
